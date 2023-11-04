@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edescare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/4e3895d11d.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <header class="bg-[#f8f8f8] z-20 fixed top-0 left-0 w-full">
+        <nav class="flex justify-between items-center w-[92%] mx-auto py-6">
+            <div>
+                <img src="/img/logo 1.png" class="w-36" alt="">
+            </div>
+            <div class="nav-links md:static fixed md:min-h-fit min-h-[60vh] left-0 top-20 -translate-x-full md:translate-x-0 md:w-auto w-full flex items-center px-5 transform transition-transform duration-300 ease-in-out bg-[#f8f8f8] z-10">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 text-xl" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 text-xl" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 text-xl" href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 text-xl" href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 text-xl" href="#">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-[#1D8AEC0A] sm:bg-transparent">
+        <div class="relative min-h-screen flex items-center">
+            <!-- Left SVG Image -->
+            <div class="absolute left-0 w-1/2 h-full bg-cover bg-center lg:block hidden" style="background-image: url('/img/Ellipse\ 281.png');padding-bottom: 70%;">
+            </div>
+            <!-- Right SVG Image -->
+            <div class="absolute right-0 w-full h-full bg-cover bg-center lg:block hidden" style="background-image: url('/img/Rectangle\ 852.png');padding-bottom: 70%;">
+            </div>
+            <!-- Container for Text -->
+            <div class="container mx-auto p-5">
+                <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                    <div class="p-4 mt-24 lg:mt-72">
+                        <div class="flex items-center">
+                            <div class="border border-[#76B6EF] w-10 mr-4 px-8"></div>
+                            <h2 class="text-[#76B6EF] text-xl">A Hospital Of experts</h2>
+                          </div>
+                        <h1 class="text-[#121212] lg:text-6xl text-4xl mt-3 font-medium">Leading Your Health To <span class="text-[#76B6EF]">Develop Your Life</span></h1>
+                        <h3 class="text-[#12121280] text-xl mt-4">At EdesCare, we are dedicated to providing the highest quality healthcare services to our community. Our mission is to improve the health and well-being of our patients through compassionate care, cutting-edge technology, and a commitment to excellence.</h3>
+                       <div class="mt-10">
+                        <a href="#" class="bg-[#1D8AEC] text-[#ffffff] p-3 rounded-md">Book Appointment</a>
+                       </div>
+                    </div>
+                    <div class="p-4 lg:mt-36 mt-5">
+                        <img src="/img/image 1.png" width="731px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-4">
+        <div class="container mx-auto lg:p-36 p-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                <div class="p-10 bg-[#FFFFFF] w-fit z-10 shadow-lg rounded-md overflow-hidden transition-transform transform hover:scale-105">
+                    <div class="flex">
+                        <img src="/img/calender.png" class="w-12" alt="">
+                        <div class="ml-3">
+                            <h1 class="text-lg font-semibold">Request Appointment</h1>
+                            <p class="text-[#12121280]">Available <span class="text-[#1D8AEC]">(24/7)</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 bg-[#FFFFFF] w-fit z-10 shadow-lg rounded-md overflow-hidden transition-transform transform hover:scale-105" style="width: 320px;">
+                    <div class="flex">
+                        <img src="/img/ph_phone-call-light.png" class="w-12" alt="">
+                        <div class="ml-3">
+                            <h1 class="text-lg font-semibold">Service Hours</h1>
+                            <p class="text-[#12121280]">Available <span class="text-[#1D8AEC]">(24/7)</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 bg-[#FFFFFF] w-fit z-10 shadow-lg rounded-md overflow-hidden transition-transform transform hover:scale-105" style="width: 318px;">
+                    <div class="flex">
+                        <img src="/img/location.png" class="w-12" alt="">
+                        <div class="ml-3">
+                            <h1 class="text-lg font-semibold">Find Location</h1>
+                            <p class="text-[#12121280]">Available <span class="text-[#1D8AEC]">(24/7)</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#F6FBFE] p-4">
+        <div class="container mx-auto p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div>
+                    <img src="/img/image 2.png" width="501px" alt="">
+                </div>
+                <div>
+                    <h1 class="text-[#121212CC] text-lg font-medium">About EdesCare</h1>
+                    <h2 class="text-3xl text-[#1D8AEC] lg:text-5xl mt-2 font-medium">Short Story About EdesCare</h2>
+                    <p class="text-[#12121280] text-xl mt-4 lg:mt-6">At EdesCare, we are dedicated to providing the highest quality healthcare services to our community. Our mission is to improve the health and well-being of our patients through compassionate care, cutting-edge technology, and a commitment to excellence.</p>
+                    <div class="flex gap-4 mt-5">
+                        <div class="bg-[#1D8AEC14] w-fit py-2" style="width: 224px;">
+                            <h1 class="text-[#1D8AEC] text-center">Happy Patients</h1>
+                            <h2 class="text-[#1D8AEC] text-center text-lg font-medium">20,000+</h2>
+                        </div>
+                        <div class="bg-[#51D71214] w-fit py-2" style="width: 224px;">
+                            <h1 class="text-[#51D712] text-center">Hospital Rooms</h1>
+                            <h2 class="text-[#51D712] text-center text-lg font-medium">200+</h2>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-5">
+                        <div class="bg-[#EC1D1D14] w-fit py-2" style="width: 224px;">
+                            <h1 class="text-[#EC1D1D] text-center">Awards</h1>
+                            <h2 class="text-[#EC1D1D] text-center text-lg font-medium">100+</h2>
+                        </div>
+                        <div class="bg-[#12121214] w-fit py-2" style="width: 224px;">
+                            <h1 class="text-[#121212CC] text-center">Employees</h1>
+                            <h2 class="text-[#121212CC] text-center text-lg font-medium">500+</h2>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <a href="#" class="bg-[#1D8AEC] text-[#FFFFFF] p-3 rounded-md">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const navlinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+             e.name = e.name === 'close' ? 'menu' : 'close' 
+             navlinks.classList.toggle('-translate-x-full')
+         }
+    </script>
+</body>
+</html>
