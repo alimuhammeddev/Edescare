@@ -29,19 +29,19 @@
             <div class="nav-links md:static fixed md:min-h-fit min-h-[60vh] left-0 top-20 -translate-x-full md:translate-x-0 md:w-auto w-full flex items-center px-5 transform transition-transform duration-300 ease-in-out bg-[#f8f8f8] lg:bg-transparent md:bg-transparent">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
-                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 text-xl md:text-base" href="#">Home</a>
+                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 lg:text-xl text-xl md:text-base" href="#">Home</a>
                     </li>
                     <li>
-                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 text-xl md:text-base" href="#">Insights</a>
+                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 lg:text-xl text-xl md:text-base" href="#">Insights</a>
                     </li>
                     <li>
-                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 text-xl md:text-base" href="#">Doctors</a>
+                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 lg:text-xl text-xl md:text-base" href="#">Doctors</a>
                     </li>
                     <li>
-                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 text-xl md:text-base" href="#">Departments</a>
+                        <a class="text-[#121212CC] hover:text-[#1D8AEC] transition ease-out duration-500 lg:text-xl text-xl md:text-base" href="#">Departments</a>
                     </li>
                     <li>
-                        <a class="text-[#ffffff] bg-[#1D8AEC] p-2 rounded-md text-base w-fit md:text-sm" href="#">Book Appointment</a>
+                        <a class="text-[#ffffff] bg-[#1D8AEC] p-2 rounded-md text-xl w-fit md:text-sm lg:text-xl" href="#">Book Appointment</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +62,7 @@
             <!-- Container for Text -->
             <div class="container mx-auto p-5">
                 <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-                    <div class="mt-24 lg:mt-72 md:-mt-96">
+                    <div class="mt-24 lg:mt-[50%] md:-mt-96">
                         <div class="flex items-center">
                             <div class="border border-[#76B6EF] w-10 mr-4 px-8"></div>
                             <h2 class="text-[#76B6EF] lg:text-xl text-lg">A Hospital Of experts</h2>
@@ -82,40 +82,32 @@
     </div>
 
     <div>
-        <div class="container mx-auto lg:p-36 p-4 md:-mt-36">
+        <div class="container mx-auto lg:p-36 p-4 md:-mt-36 mt-0 lg:mt-0 xl:ml-24 lg:-ml-8 xl:ml-a">
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
-                <div class="p-10 bg-[#FFFFFF] md:w-fit w-[317px] z-10 shadow-lg rounded-md overflow-hidden transition-transform transform hover:scale-105 cursor-pointer">
-                    <div class="flex">
-                        <img src="/img/calender.png" class="w-12" alt="">
-                        <div class="ml-3">
-                            <h1 class="text-base font-semibold">Request Appointment</h1>
-                            <p class="text-[#12121280]">Available <span class="text-[#1D8AEC]">(24/7)</span></p>
-                        </div>
+                <div class="p-7 flex items-center bg-[#FFFFFF] z-10 shadow-lg xl:w-[300px] rounded-md hover:transform transition-transform ease-out hover:scale-105">
+                    <img src="/img/calender.png" alt="">
+                    <div class="ml-3">
+                        <h1 class="text-base font-semibold">Request Appointment</h1>
+                        <p class="text-[#12121280]">Available <span class="text-[#1D8AEC]">(24/7)</span></p>
                     </div>
                 </div>
-                <div class="p-10 bg-[#FFFFFF] md:w-fit w-[318px] z-10 shadow-lg rounded-md overflow-hidden transition-transform transform hover:scale-105 cursor-pointer">
-                    <div class="flex">
-                        <img src="/img/ph_phone-call-light.png" class="w-12" alt="">
-                        <div class="ml-3">
-                            <h1 class="text-base font-semibold">Service Hours</h1>
-                            <p class="text-[#12121280]">Available <span class="text-[#1D8AEC]">(24/7)</span></p>
-                        </div>
+                <div class="p-4 flex items-center bg-[#FFFFFF] z-10 shadow-lg xl:w-[300px] rounded-md hover:transform transition-transform ease-out hover:scale-105">
+                    <img src="/img/ph_phone-call-light.png" alt="">
+                    <div class="ml-3">
+                        <h1 class="text-base font-semibold">Service Hours</h1>
+                        <p class="text-[#12121280]">Available <span class="text-[#1D8AEC] rounded-md">(24/7)</span></p>
                     </div>
                 </div>
-                <div class="p-10 bg-[#FFFFFF] md:w-fit w-[318px] z-10 shadow-lg rounded-md overflow-hidden transition-transform transform hover:scale-105 cursor-pointer">
-                    <div class="flex">
-                        <img src="/img/location.png" class="w-12" alt="">
-                        <div class="ml-3">
-                            <h1 class="text-base font-semibold">Find Location</h1>
-                            <p class="text-[#12121280]">Available <span class="text-[#1D8AEC]">(24/7)</span></p>
-                        </div>
+                <div class="p-4 flex items-center bg-[#FFFFFF] z-10 shadow-lg xl:w-[300px] hover:transform transition-transform ease-out hover:scale-105">
+                    <img src="/img/location.png" alt="">
+                    <div class="ml-3">
+                        <h1 class="text-base font-semibold">Find Location</h1>
+                        <p class="text-[#12121280]">Available <span class="text-[#1D8AEC]">(24/7)</span></p>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
-
     <div class="bg-[#F6FBFE] p-4">
         <div class="container mx-auto p-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
@@ -248,15 +240,15 @@
                     <h2 class="text-2xl lg:text-5xl lg:text-right text-[#1D8AEC] font-semibold mt-3">Widest Network Of HealthCare</h2>
                     <h4 class="text-[#12121280] lg:text-xl text-lg mt-4 lg:text-justify lg:ml-24">At EdesCare, we are dedicated to providing the highest quality healthcare services to our community. Our mission is to improve the health and well-being of our patients through compassionate care, cutting-edge technology, and a commitment to excellence.</h4>
                     <div class="container mx-auto p-5 bg-[#EDF7FD] mt-10 rounded-md">
-                        <div class="lg:flex justify-between">
+                        <div class="lg:flex items-center">
                             <div class="p-4">
                                 <img src="/img/image 4.png" alt="">
                             </div>
                             <div class="p-4">
                                 <h1 class="text-xl text-[#1D8AEC] font-semibold -mt-2">Make An Appointment</h1>
-                                <input type="Name" name="name" class="mt-3 block rounded-md border border-[#ffffff] bg-[#FFFFFF] lg:px-20 py-4 p-2 placeholder-[#12121266] shadow-sm placeholder:font-base placeholder:text-#37393F focus:border-[#DDDDDD] focus:outline-none focus:ring-1 focus:ring-[#DDDDDD] sm:text-sm" placeholder="Name"/>
-                                <input type="email" name="email" class="mt-5 block rounded-md border border-[#ffffff] bg-[#FFFFFF] lg:px-20 py-4 p-2 placeholder-[#12121266] shadow-sm placeholder:font-base focus:border-[#DDDDDD] focus:outline-none focus:ring-1 focus:ring-[#DDDDDD] sm:text-sm" placeholder="Email"/>
-                                <input type="Name" name="name" class="mt-5 block rounded-md border border-[#ffffff] bg-[#FFFFFF] lg:px-20 py-4 p-2 placeholder-[#12121266] shadow-sm placeholder:font-base placeholder:text-#37393F focus:border-[#DDDDDD] focus:outline-none focus:ring-1 focus:ring-[#DDDDDD] sm:text-sm" placeholder="Phone"/>
+                                <input type="Name" name="name" class="mt-3 block rounded-md border border-[#ffffff] bg-[#FFFFFF] lg:px-20 py-4 p-2 placeholder-[#12121266] shadow-sm placeholder:font-base placeholder:text-#37393F focus:border-[#DDDDDD] focus:outline-none focus:ring-1 focus:ring-[#DDDDDD] sm:text-sm" placeholder="Name" required/>
+                                <input type="email" name="email" class="mt-5 block rounded-md border border-[#ffffff] bg-[#FFFFFF] lg:px-20 py-4 p-2 placeholder-[#12121266] shadow-sm placeholder:font-base focus:border-[#DDDDDD] focus:outline-none focus:ring-1 focus:ring-[#DDDDDD] sm:text-sm" placeholder="Email" required/>
+                                <input type="Name" name="name" class="mt-5 block rounded-md border border-[#ffffff] bg-[#FFFFFF] lg:px-20 py-4 p-2 placeholder-[#12121266] shadow-sm placeholder:font-base placeholder:text-#37393F focus:border-[#DDDDDD] focus:outline-none focus:ring-1 focus:ring-[#DDDDDD] sm:text-sm" placeholder="Phone" required/>
                                 <div class="mt-8">
                                     <a href="#" class="bg-[#1D8AEC] text-[#FFFFFF] p-3 lg:px-[83px] rounded-md">Book Appointment</a>
                                 </div>
@@ -431,7 +423,7 @@
                             </div>
                         </div>
                         <div class="px-6 py-4 lg:pb-16">
-                          <div class="font-bold text-xl mb-2 text-[#1d8aec]">EdesCare Services Are Ready To Serve Your Family</div>
+                          <div class="font-bold text-xl lg:mb-8 xl:mb-2 text-[#1d8aec]">EdesCare Services Are Ready To Serve Your Family</div>
                           <p class="text-[#12121280] text-base">
                             At EdesCare, we are dedicated to providing the highest quality healthcare services to our community. 
                           </p>
